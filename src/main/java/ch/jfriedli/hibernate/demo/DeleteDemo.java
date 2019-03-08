@@ -6,7 +6,6 @@ import org.hibernate.cfg.Configuration;
 
 import ch.jfriedli.hibernate.demo.entity.Instructor;
 import ch.jfriedli.hibernate.demo.entity.InstructorDetail;
-import ch.jfriedli.hibernate.demo.entity.Student;
 
 public class DeleteDemo {
 
