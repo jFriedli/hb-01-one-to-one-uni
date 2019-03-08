@@ -10,13 +10,6 @@ import javax.persistence.Table;
 @Entity
 @Table(name="instructor_detail")
 public class InstructorDetail {
-
-	public InstructorDetail() {};
-	
-	public InstructorDetail(String youtubeChannel, String hobby) {
-		this.youtubeChannel = youtubeChannel;
-		this.hobby = hobby;
-	}
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -28,6 +21,13 @@ public class InstructorDetail {
 	
 	@Column(name="hobby")
 	private String hobby;
+	
+	public InstructorDetail() {};
+	
+	public InstructorDetail(String youtubeChannel, String hobby) {
+		this.youtubeChannel = youtubeChannel;
+		this.hobby = hobby;
+	}
 
 	public int getId() {
 		return id;
